@@ -1,3 +1,18 @@
 = Sns Sass Filter
+Adds Sass filtering to your stylesheets
 
-Description goes here
+
+== Requirements
+ * Radiant v0.6.7 or higher
+ * Styles 'n Scripts v0.5 or higher
+
+
+== Installation
+Copy the extension into:
+  [your radiant project]/vendor/extensions/sns_sass_filter
+  
+Restart your server.
+
+
+== To Do
+Needs specs.
