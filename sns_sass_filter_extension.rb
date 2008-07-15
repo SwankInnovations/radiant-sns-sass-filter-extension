@@ -5,7 +5,7 @@ class SnsSassFilterExtension < Radiant::Extension
   url "http://haml.hamptoncatlin.com"
   
   def activate
-    raise "The SnS Sass Filter extension requires the Styles 'n Scripts extension be available" unless defined?(StylesNScriptsExtension)
+    raise "The SnS Sass Filter extension requires the Styles 'n Scripts extension be available" unless defined?(SnsExtension)
     SnsSassFilter
   end
 end
