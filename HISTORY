@@ -1,3 +1,13 @@
+v0.3    Added exception handling (apparently Sass throws Sass::SyntaxError's
+        around and, unhandled, they just blow up your rails app.  Nice.  So,
+        now the filter renders a nifty error message (with line number) whenever
+        Sass doesn't like your content.
+        
+        Note: Sass doesn't do partial rendering so you're either going to get a
+        fully rendered stylesheet or an error message.  Either way beats a 500
+        Rails Application Error in my book, though.  
+
+
 v0.2    Updated to work with Styles 'n Scripts v0.6 (renamed extension to "SnS")
 
 

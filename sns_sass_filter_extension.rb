@@ -1,5 +1,5 @@
 class SnsSassFilterExtension < Radiant::Extension
-  version "0.1"
+  version "0.3"
   extension_name "Styles 'n Scripts SASS Filter"
   description "Allows you to create DRY CSS in the Styles 'n Scripts Extension using Hampton Catlin's wonderful Sass library."
   url "http://haml.hamptoncatlin.com"
