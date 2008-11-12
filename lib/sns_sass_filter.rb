@@ -13,6 +13,10 @@ class SnsSassFilter < StylesheetFilter
 
 
   def filter(text)
-    Sass::Engine.new(text, @sass_options).render
+    begin
+      Sass::Engine.new(text, @sass_options).render
+    rescue Sass::SyntaxError
+      "Syntax Error at line #{$!.sass_line}: " + $!.to_s
+    end
   end
 end
